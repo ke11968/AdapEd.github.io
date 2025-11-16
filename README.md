@@ -1,1 +1,0 @@
-# AdapEd.github.io
