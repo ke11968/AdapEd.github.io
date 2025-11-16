@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - AdaptEd</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-image-name">
+                    <img src="images/logo.svg" alt="logo" class="logo-image">
+                    <a href="index.html" class="logo">AdaptEd.</a>
+                </div>
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                    <a href="login.html" >Log In</a>
+                </nav>
+                
+                <div class="header-buttons">
+                 
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="login.html" >Log In</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding-top: 3rem;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class = "pricing_main">Simple, <span class = "span">Transparent</span> Pricing</h2>
+                <p>Choose the plan that best fits your team's learning needs. All plans include access for up to 15 team members.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Online Course</h3>
+                    <p class="description">Purchase a single ready-made course</p>
+                   <div class="price">$24.99 <span class="month">/month</span></div>
+                   
+                    <ul class="pricing-features">
+                        <li>Access to one selected course</li>
+                        <li>Up to 15 team members</li>
+                        <li>1 months of access</li>
+                        <li>5 offline sessions with teacher</li>
+                        <li>Progress tracking & analytics</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="alert('Payment integration coming soon!')">Get Started</button>
+                </div>
+
+                <div class="pricing-card_2">
+                    <h3>Offline Course</h3>
+                    
+                    <div class="price">$44.99 <span class="month">/month</span></div>
+                    
+                    <ul class="pricing-features">
+                        <li>Your custom course</li>
+                        <li>Priority support</li>
+                        <li>Progress tracking & analytics</li>
+                    </ul>
+                    <button class="btn btn-primary"  onclick="alert('Payment integration coming soon!')">Get Started</button>
+                </div>
+
+                
+            </div>
+
+            <div class="section-header" style="margin-top: 4rem;">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>How does the access code work?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        After purchasing a course, you'll receive a unique code. Share this code with your team members (up to 15). Each person enters the code to create their account and access the course.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>Can I switch between courses?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        With the Monthly Subscription, you can switch between any online courses. One-time purchases are locked to the selected course.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>How long does course access last?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        One-time purchases include 6 months of access. Subscriptions provide access as long as the subscription is active.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>What if I need more than 15 seats?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can purchase multiple courses or subscriptions. Contact our sales team for volume discounts on larger teams.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
