@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaptEd - Customized Business English Training for Teams</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-image-name">
+                    <img src="images/logo.svg" alt="logo" class="logo-image">
+                    <a href="index.html" class="logo">AdaptEd.</a>
+                </div>
+                
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-ghost">Log In</a>
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-ghost">Log In</a>
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="gradient-text">Customized trainings.</span><br>
+                        Effective results.
+                    </h1>
+                    <p class="hero_text_p">Transform Your Team's English Skills</p>
+                    <p class="hero_text_p">Customizable English courses designed for businesses. Choose from ready-made industry-specific programs or create tailored courses for up to 15 team members.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
+                        <a href="pricing.html" class="btn btn-outline btn-lg btn_spe">View Pricing</a>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><img src="images/BOOK BOX.svg" alt="book icon" class="hero-img"></div>
+                        <div class="stat-value">
+                            <p class="stat-value-p-top">20+</p>
+                            <p class="stat-value-p">Online Courses</p>
+                        </div>
+                        
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><img src="images/PPL BOX.svg" alt="people icon" class="hero-img"></div>
+                        <div class="stat-value">
+                            <p class="stat-value-p-top">Up to 15</p>
+                            <p class="stat-value-p">Team Members per Course</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><img src="images/CHECK BOX.svg" alt="tick icon" class="hero-img"></div>
+                        <div class="stat-value">
+                            <p class="stat-value-p-top">5 levels</p>
+                            <p class="stat-value-p">From Beginner to Advanced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transform Your Team's English Skills</h2>
+                <p>Everything you need to upskill your team's English proficiency in one comprehensive platform.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Ready-Made Courses</h3>
+                    <p>Industry-specific courses like English for Waiters, Front Desk, and Clerks ready to deploy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Custom Courses</h3>
+                    <p>Tailor courses to your business needs and industry requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Team Access</h3>
+                    <p>Enroll up to 15 team members per course with secure code access.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose AdaptEd?</h2>
+                <p>Everything you need to upskill your team's English proficiency in one comprehensive platform.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="images/book.svg" alt=""></div>
+                    <h3>Ready-Made Courses</h3>
+                    <p>Industry-specific courses like English for Waiters, Front Desk, and Clerks ready to deploy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: #513729;"><img src="images/flash.svg" alt=""></div>
+                    <h3>Custom Courses</h3>
+                    <p>Tailor courses to your business needs and industry requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="images/profile-2user.svg" alt=""></div>
+                    <h3>Team Access</h3>
+                    <p>Enroll up to 15 team members per course with secure code access.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: #513729;"><img src="images/clock.svg" alt=""></div>
+                    <h3>Flexible Learning</h3>
+                    <p>Choose between online self-paced courses or offline sessions with teachers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="images/medal.svg" alt=""></div>
+                    <h3>5 Proficiency Levels</h3>
+                    <p>From Beginner to Advanced, courses for every skill level.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: #513729;"><img src="images/headphone.svg" alt=""></div>
+                    <h3>Expert Support</h3>
+                    <p>Professional teachers for offline courses and ongoing support.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get your team started with AdaptEd in four simple steps.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Course</h3>
+                    <p>Browse ready-made industry courses or customize your own based on your team's needs.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Select Your Plan</h3>
+                    <p>Pick a one-time course purchase or monthly subscription for ongoing access.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Access Code</h3>
+                    <p>Receive a unique code for your team members to access the course (up to 15 users).</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Start Learning</h3>
+                    <p>Your team enters the code and begins their English learning journey.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="how-it-works">
+    <div class="container">
+        <h2 class="hiw-title">How It Works</h2>
+        <p class="hiw-subtitle">Get your team started with AdaptEd in four simple steps.</p>
+
+        <div class="hiw-steps">
+
+            <!-- STEP 1 -->
+            <div class="hiw-step">
+                <div class="hiw-icon"><!-- сюда загрузишь свою иконку --></div>
+                <div class="hiw-circle">1</div>
+                <h3>Choose Your Course</h3>
+                <p>Browse ready-made industry courses or customize your own based on your team's needs.</p>
+            </div>
+
+            <div class="hiw-line"></div>
+
+            <!-- STEP 2 -->
+            <div class="hiw-step">
+                <div class="hiw-icon"></div>
+                <div class="hiw-circle">2</div>
+                <h3>Select Your Plan</h3>
+                <p>Pick a one-time course purchase or monthly subscription for ongoing access.</p>
+            </div>
+
+            <div class="hiw-line"></div>
+
+            <!-- STEP 3 -->
+            <div class="hiw-step">
+                <div class="hiw-icon"></div>
+                <div class="hiw-circle">3</div>
+                <h3>Get Access Code</h3>
+                <p>Receive a unique code for your team members to access the course.</p>
+            </div>
+
+            <div class="hiw-line"></div>
+
+            <!-- STEP 4 -->
+            <div class="hiw-step">
+                <div class="hiw-icon"></div>
+                <div class="hiw-circle">4</div>
+                <h3>Start Learning</h3>
+                <p>Your team enters the code and begins their English learning journey.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Team's English Skills?</h2>
+                    <p>Join businesses that trust AdaptEd for their team's English learning journey.</p>
+                    <a href="courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>AdaptEd.</h3>
+                    <p>Transforming business English education with customizable courses for teams.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="login.html">Log In</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <span><img src="images/sms.svg" alt=""></span>
+                        <a href="mailto:adapted@gmail.com">adapted@gmail.com</a>
+                    </div>
+                    <div class="footer-contact">
+                        <span><img src="images/Social Icons.svg" alt=""></span>
+                        <a href="tel:+996508603600">+996 508 603 600</a>
+                    </div>
+                    <div class="footer-contact">
+                        <span><img src="images/call.svg" alt=""></span>
+                        <a href="https://adapted.kg" target="_blank">adapted.kg</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 AdaptEd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu) {
+                menu.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+</html>
