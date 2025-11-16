@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard - AdaptEd</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="business-dashboard.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-image-name">
+                    <img src="images/logo.svg" alt="logo" class="logo-image">
+                    <a href="index.html" class="logo">AdaptEd.</a>
+                </div>
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <a href="business-dashboard.html" class="btn btn-primary">Dashboard</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="business-dashboard.html" class="btn btn-primary">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Business Dashboard</h1>
+                <p>Welcome back! Here's an overview of your team's learning progress.</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="dashboard-stat">
+                    <div class="value">3</div>
+                    <div class="label">Active Courses</div>
+                </div>
+                <div class="dashboard-stat">
+                    <div class="value">35</div>
+                    <div class="label">Total Employees</div>
+                </div>
+                <div class="dashboard-stat">
+                    <div class="value">64%</div>
+                    <div class="label">Avg. Progress</div>
+                </div>
+                <div class="dashboard-stat">
+                    <div class="value">28</div>
+                    <div class="label">Active this Month</div>
+                </div>
+            </div>
+
+            <div class="purchased-courses">
+                <h2>Purchased Courses</h2>
+
+                <div class="course-list-item">
+                    <div class="course-list-header">
+                        <div class="course-list-info">
+                            <h3>English for Waiters</h3>
+                            <div class="course-list-meta">
+                                <span style="padding: 0.25rem 0.75rem; background: var(--muted); border-radius: 1rem; font-size: 0.75rem;">Ready-Made</span>
+                                <span>Elementary</span>
+                                <span>Purchased: 11/1/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 67%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Average progress: 67%</p>
+                    <div class="course-list-footer">
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Access Code</div>
+                            <div class="access-code">WAIT-2024-A98</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Seats Used</div>
+                            <div style="font-weight: 600;">12/15</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Expires</div>
+                            <div style="font-weight: 600;">5/1/2025</div>
+                        </div>
+                        <div class="course-list-actions">
+                            <button class="btn btn-outline btn-sm">View Report</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-list-item">
+                    <div class="course-list-header">
+                        <div class="course-list-info">
+                            <h3>Custom Sales Course</h3>
+                            <div class="course-list-meta">
+                                <span style="padding: 0.25rem 0.75rem; background: rgba(37, 99, 235, 0.1); color: var(--primary); border-radius: 1rem; font-size: 0.75rem;">Custom</span>
+                                <span>Intermediate</span>
+                                <span>Purchased: 10/15/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Average progress: 45%</p>
+                    <div class="course-list-footer">
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Access Code</div>
+                            <div class="access-code">POHT-2809-L7I</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Seats Used</div>
+                            <div style="font-weight: 600;">8/15</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Expires</div>
+                            <div style="font-weight: 600;">4/15/2025</div>
+                        </div>
+                        <div class="course-list-actions">
+                            <button class="btn btn-outline btn-sm">View Report</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-list-item">
+                    <div class="course-list-header">
+                        <div class="course-list-info">
+                            <h3>Subscription - All Courses</h3>
+                            <div class="course-list-meta">
+                                <span style="padding: 0.25rem 0.75rem; background: rgba(34, 197, 94, 0.1); color: var(--success); border-radius: 1rem; font-size: 0.75rem;">Subscription</span>
+                                <span>All Levels</span>
+                                <span>Started: 11/10/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 82%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Average progress: 82%</p>
+                    <div class="course-list-footer">
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Access Code</div>
+                            <div class="access-code">FJOS-4821-88M</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Seats Used</div>
+                            <div style="font-weight: 600;">15/15</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Renews</div>
+                            <div style="font-weight: 600;">12/10/2024</div>
+                        </div>
+                        <div class="course-list-actions">
+                            <button class="btn btn-outline btn-sm">View Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
