@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - AdaptEd</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-image-name">
+                    <img src="images/logo.svg" alt="logo" class="logo-image">
+                    <a href="index.html" class="logo">AdaptEd.</a>
+                </div>
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="login.html" >Log In</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-ghost">Log In</a>
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Log In to <span class="span">AdaptEd</span></h2>
+            <p class="subtitle">Choose your account type to continue.</p>
+
+            <div class="account-type-grid">
+                <a href="employee-register.html" class="account-type-card account-type-card1">
+                    <div class="icon"><img src="./images/profile-2user.svg" alt=""></div>
+                    <h3>Employee Account</h3>
+                    <p>Access your assigned courses using the code provided by your organization.</p>
+                    <ul>
+                        <li>Access courses with code</li>
+                        <li>Track your progress</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Continue as Employee</button>
+                </a>
+
+                <a href="business-register.html" class="account-type-card account-type-card2">
+                    <div class="icon"><img src="./images/wallet-3.svg" alt=""></div>
+                    <h3>Business Account</h3>
+                    <p>Manage your team's courses, track progress, and view analytics.</p>
+                    <ul>
+                        <li>Manage purchased courses</li>
+                        <li>View team progress</li>
+                        <li>Generate access codes</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Continue as Business</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

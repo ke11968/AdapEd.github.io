@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - AdaptEd</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-image-name">
+                    <img src="images/logo.svg" alt="logo" class="logo-image">
+                    <a href="index.html" class="logo">AdaptEd.</a>
+                </div>
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html" class="active">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-ghost">Log In</a>
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="pricing.html">Pricing</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-ghost">Log In</a>
+                    <a href="courses.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding-top: 3rem;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your <span class="span">Learning Path</span></h2>
+                <p>Choose from our ready-made industry-specific courses or create a custom course tailored to your business needs. All courses support up to 15 team members.</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Course Type</label>
+                    <select id="courseTypeFilter" onchange="filterCourses()">
+                        <option value="all">All Courses</option>
+                        <option value="ready-made">Ready-Made</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Level</label>
+                    <select id="courseLevelFilter" onchange="filterCourses()">
+                        <option value="all">All</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="elementary">Elementary</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="upper-intermediate">Upper-Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="coursesGrid" class="features-grid">
+                <div class="course-card" data-type="ready-made" data-level="elementary">
+                    <div class="course-header">
+                        <span class="course-type">Ready-Made</span>
+                        <h3>English for Waiters</h3>
+                        <div class="course-level">Elementary - Intermediate</div>
+                    </div>
+                    <p class="course-description">Master restaurant vocabulary, customer service phrases, and menu descriptions.</p>
+                    <ul class="course-features">
+                        <li>✓ Taking orders</li>
+                        <li>✓ Handling complaints</li>
+                        <li>✓ Table service</li>
+                        <li>✓ Menu terminology</li>
+                    </ul>
+                    <div class="course-meta">
+                        <span>📅 8 weeks</span>
+                        <span>📚 24 modules</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Course selection functionality coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="ready-made" data-level="elementary">
+                    <div class="course-header">
+                        <span class="course-type">Ready-Made</span>
+                        <h3>English for Front Desk</h3>
+                        <div class="course-level">Elementary - Intermediate</div>
+                    </div>
+                    <p class="course-description">Perfect for reception staff handling guest inquiries and check-ins.</p>
+                    <ul class="course-features">
+                        <li>✓ Guest communication</li>
+                        <li>✓ Reservation management</li>
+                        <li>✓ Problem resolution</li>
+                        <li>✓ Professional etiquette</li>
+                    </ul>
+                    <div class="course-meta">
+                        <span>📅 10 weeks</span>
+                        <span>📚 30 modules</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Course selection functionality coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="ready-made" data-level="elementary">
+                    <div class="course-header">
+                        <span class="course-type">Ready-Made</span>
+                        <h3>English for Clerks</h3>
+                        <div class="course-level">Elementary - Intermediate</div>
+                    </div>
+                    <p class="course-description">Office communication and administrative English essentials.</p>
+                    <ul class="course-features">
+                        <li>✓ Email writing</li>
+                        <li>✓ Phone calls</li>
+                        <li>✓ Filing & documentation</li>
+                        <li>✓ Office vocabulary</li>
+                    </ul>
+                    <div class="course-meta">
+                        <span>📅 8 weeks</span>
+                        <span>📚 24 modules</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Course selection functionality coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="custom" data-level="beginner">
+                    <div class="course-header">
+                        <span class="course-type" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">Custom</span>
+                        <h3>Beginner Custom Course</h3>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <p class="course-description">Build a foundation in English tailored to your industry.</p>
+                    <div class="course-meta">
+                        <span>📅 Flexible (6-12 weeks)</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Custom course creation coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="custom" data-level="elementary">
+                    <div class="course-header">
+                        <span class="course-type" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">Custom</span>
+                        <h3>Elementary Custom Course</h3>
+                        <div class="course-level">Elementary</div>
+                    </div>
+                    <p class="course-description">Develop practical English skills specific to your business needs.</p>
+                    <div class="course-meta">
+                        <span>📅 Flexible (6-12 weeks)</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Custom course creation coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="custom" data-level="intermediate">
+                    <div class="course-header">
+                        <span class="course-type" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">Custom</span>
+                        <h3>Intermediate Custom Course</h3>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <p class="course-description">Enhance communication skills for your industry context.</p>
+                    <div class="course-meta">
+                        <span>📅 Flexible (6-12 weeks)</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Custom course creation coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="custom" data-level="upper-intermediate">
+                    <div class="course-header">
+                        <span class="course-type" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">Custom</span>
+                        <h3>Upper-Intermediate Custom Course</h3>
+                        <div class="course-level">Upper-Intermediate</div>
+                    </div>
+                    <p class="course-description">Advanced business English customized to your requirements.</p>
+                    <div class="course-meta">
+                        <span>📅 Flexible (6-12 weeks)</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Custom course creation coming soon!')">Customize Course</button>
+                </div>
+
+                <div class="course-card" data-type="custom" data-level="advanced">
+                    <div class="course-header">
+                        <span class="course-type" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">Custom</span>
+                        <h3>Advanced Custom Course</h3>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <p class="course-description">Master sophisticated English for executive-level communication.</p>
+                    <div class="course-meta">
+                        <span>📅 Flexible (6-12 weeks)</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="alert('Custom course creation coming soon!')">Customize Course</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
